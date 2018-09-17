@@ -7,7 +7,7 @@ get '/' do
     HTML
   else
     <<-HTML
-    <h1>Hola #{params[:nombre]}!</h1>
+    <h1>Hola #{params[:nombre].capitalize}!</h1>
     HTML
   end
 end
